@@ -1,5 +1,11 @@
 Mleko x 2
 Kiselo mleko x 5
 Jogurt x 3
+<<<<<<< HEAD
 Sirenje x 1
 Kashkaval x 3
+=======
+Zdenka x 1
+Kashkaval x 1
+Ajran x 2
+>>>>>>> branch2
