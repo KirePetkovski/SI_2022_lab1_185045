@@ -1,0 +1,130 @@
+
+За изработка на лабораториската вежба ги употребив следните команди:
+
+1.  git config --global user.email "kire.petkovski@student.finki.ukim.mk" - Конфигурација на мојот e-mail со дадениот Git проект 
+2.  git config --global user.name "KirePetkovski" - Конфигурација на корисничко име за кое имаме отворено репозиториум на GitHub
+
+3.  git clone https://github.com/KirePetkovski/SI_2022_lab1_185045.git - Клонирање/симнување на дадениот репозиториум во мојот локален репозиториум 
+4.  git remote -v - Ги листа сите поврзани репозиториуми со локалниот репозиториум. Проверка за поврзаноста со GitHub
+
+5.  git add shopping_list.txt - Додава нов file (документ) во Git проектот
+6.  git commit -m "Add 5 items to the shopping list" - додава commit со порака Add 5 items to the shopping list
+7.  git commit -a -m "Add quantities to the items." - Додава и прави commit на веќе постоечки file  со порака Add quantities to the items.  
+
+8.  git branch branch1 - креира нова гранка со име branch1.
+9.  git branch branch2 - креира нова гранка со име branch2.
+10. git branch - ги листа сите гранки кои се креирани
+
+Досегашни логови (прашање 8)
+$ git log
+
+commit a1d0cc582cb37132251277ee843ce320134cdb96 (HEAD -> master, branch2, branch1)
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:51:06 2022 +0100
+
+    Add quantities to the items.
+
+commit 633a9ea015e0cd8379691be996aa2580bd52b0bd
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:50:17 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 0876116b64a31417241a71eba25e2cee932cdebb (origin/master, origin/HEAD)
+Author: KirePetkovski <63061204+KirePetkovski@users.noreply.github.com>
+Date:   Wed Mar 16 21:41:08 2022 +0100
+
+    Update README.md
+
+commit 65e5d80936a070d0c56aff37b3fcb5576b518f5c
+Author: KirePetkovski <63061204+KirePetkovski@users.noreply.github.com>
+Date:   Wed Mar 16 21:39:39 2022 +0100
+
+
+11. git push -u origin master - синхронизација на гранката master со GitHub. Односно комитите на граката ги поставува на GitHub. 
+12. git push -u origin branch1 - синхронизација на гранката branch1 со GitHub. Односно комитите на граката ги поставува на GitHub.
+13. git push -u origin branch2 - синхронизација на гранката branch2 со GitHub. Односно комитите на граката ги поставува на GitHub.
+
+14. git checkout branch1 - се префла на гранката branch1.
+
+15. git commit -a -m "Change quantity of item #5" - го додава и прави commit на изменетиот file. Се поставува на гранката branch1. 
+16. git git checkout master - се префла на гранката master.
+17. git commit -a -m "Change quantity of item #2" - го додава и прави commit на изменетиот file. Се поставува на гранката master.
+
+18. git push -u origin master - синхронизација на гранката master со GitHub. Односно комитите на граката ги поставува на GitHub. 
+19. git push -u origin branch1 - синхронизација на гранката branch1 со GitHub. Односно комитите на граката ги поставува на GitHub.
+20. git push -u origin branch2 - синхронизација на гранката branch2 со GitHub. Односно комитите на граката ги поставува на GitHub.
+
+21. git checkout branch2 - се префла на гранката branch2.
+22. git commit -a -m "Modify item #4" - го додава и прави commit на изменетиот file. Се поставува на гранката branch2.
+
+Досегашни логови (прашање 17)
+$ git log
+commit 9963efca88dd71f0cbfe66535737bf804f1600e7 (HEAD -> branch2)
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:58:13 2022 +0100
+
+    Modify item #4
+
+commit a1d0cc582cb37132251277ee843ce320134cdb96 (origin/branch2)
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:51:06 2022 +0100
+
+    Add quantities to the items.
+
+commit 633a9ea015e0cd8379691be996aa2580bd52b0bd
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:50:17 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 0876116b64a31417241a71eba25e2cee932cdebb
+Author: KirePetkovski <63061204+KirePetkovski@users.noreply.github.com>
+Date:   Wed Mar 16 21:41:08 2022 +0100
+
+    Update README.md
+
+23. git reset --soft HEAD^ - Покажувачот покажува на последниот поставен комит.
+24. git commit -a -m "Modify item #4 and add item #6" - се прави промена на поставениот комит. Се поставува на гранката branch2.
+
+Досегашни логови (прашање 19)
+$ git log
+commit e48c2392f02563ddaeb30084ccd348572fd24869 (HEAD -> branch2)
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 22:00:21 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit a1d0cc582cb37132251277ee843ce320134cdb96 (origin/branch2)
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:51:06 2022 +0100
+
+    Add quantities to the items.
+
+commit 633a9ea015e0cd8379691be996aa2580bd52b0bd
+Author: KirePetkovski <kire.petkovski@student.finki.ukim.mk>
+Date:   Wed Mar 16 21:50:17 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 0876116b64a31417241a71eba25e2cee932cdebb
+Author: KirePetkovski <63061204+KirePetkovski@users.noreply.github.com>
+Date:   Wed Mar 16 21:41:08 2022 +0100
+
+    Update README.md
+
+Спојување на branch1 so master
+25. git checkout master - се префла на гранката master
+26. git merge branch1 - се спојува гранката branch1 со гранката master. Се појавува конфликт бидејќи на двете гранки работевме во ист документ. 
+			Се појавува прозорец во кој мораме да напишеме зошто е потребен овој merge commit. Спојувањето ќе се одвива според recursive strategy.
+Спојување на branch2 so master
+27. git merge branch2 - се спојува гранката branch2 со гранката master. При што настанува грешка при спојувањето. 
+28. git status - проверка, односно приказ на commit-от при кој настанал конфликт. 
+29. git commit -a - го додава комитот со цел да се реши конфликтот. Спојувањето на гранката branch2 со master се одвива според recursive strategy.
+
+30. git add 185045.txt - ја додава документацијата.
+31. git commit -m "Add docs" - додава commit 
+
+32. git push -u origin master - се прави синхронизација на локалниот со GitHub репозиториум.
+
+
